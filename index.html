@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple task list for creating, editing, and completing tasks.">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">Your personal to-do list</p>
+        <h1>Task Manager</h1>
+        <p class="student-line">Student ID: <span id="student-id">STUDENT_ID</span></p>
+      </div>
+      <a id="contribution-link" class="text-link" href="contribution.html">Contributor page</a>
+    </header>
+
+    <section class="panel" aria-labelledby="form-heading">
+      <h2 id="form-heading">New task</h2>
+      <form id="task-form">
+        <label for="task-title">Title</label>
+        <input id="task-title" name="title" type="text" maxlength="200" placeholder="For example, practice Git" required>
+
+        <label for="task-description">Description</label>
+        <textarea id="task-description" name="description" rows="3" maxlength="2000" placeholder="Additional details (optional)"></textarea>
+
+        <div class="form-actions">
+          <button id="task-submit" class="button button-primary" type="submit">Add task</button>
+          <button id="task-cancel" class="button button-secondary" type="button" hidden>Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="tasks-section" aria-labelledby="tasks-heading">
+      <div class="section-heading">
+        <h2 id="tasks-heading">Tasks</h2>
+        <span id="task-count" class="task-count">0</span>
+      </div>
+      <p id="status-message" class="status-message" role="status" aria-live="polite"></p>
+      <div id="task-list" class="task-list" aria-live="polite"></div>
+    </section>
+
+    <footer class="page-footer">Tasks are saved in this browser until Supabase is configured.</footer>
+  </main>
+</body>
+</html>
