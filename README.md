@@ -41,8 +41,8 @@ Add your public Supabase URL and key before checking the remote database. `confi
 
 The “Contributor page” link points to `contribution.html`. Per the assignment, another student must add `contribution.html` and `contribution.json` through a Pull Request; get those files from their PR.
 
-https://github.com/vistula-team-project-72662-new/vistula-task-manager/pull/1
-https://github.com/vistula-team-project-72662-new/vistula-task-manager/pull/2
+PR 1: https://github.com/vistula-team-project-72662-new/vistula-task-manager/pull/1 ;
+PR 2: https://github.com/vistula-team-project-72662-new/vistula-task-manager/pull/2 
 
 ## Project files
 
